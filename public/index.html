@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- TODO: replace every "Your Name" / example placeholder on this page with your details. -->
+  <title>Your Name | Portfolio</title>
+  <meta name="description" content="Portfolio of Your Name: computing student focused on software performance and testing.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main">
+      <a class="nav-brand" href="#hero">Your Name</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#repos">Repos</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container">
+        <p class="eyebrow">Hello, I'm</p>
+        <h1>Your Name</h1>
+        <p class="tagline">Computing student focused on software performance and testing.</p>
+        <ul class="link-row">
+          <li><a class="button button-primary" href="mailto:you@example.com">Email</a></li>
+          <li><a class="button" href="https://github.com/Belford95" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a class="button" href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container narrow">
+        <h2>About</h2>
+        <p>
+          I'm a computing student who enjoys making software fast, reliable and easy to maintain.
+          I like digging into why a program is slow, writing tests that catch problems early,
+          and turning what I find into clear, practical improvements.
+        </p>
+        <p>
+          I'm looking for internship and graduate roles where I can contribute to well-engineered
+          products and keep learning from experienced teams.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skill-grid">
+          <div class="skill-group">
+            <h3>Languages</h3>
+            <ul class="tags">
+              <li>Python</li><li>Java</li><li>C / C++</li><li>JavaScript</li><li>SQL</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Testing &amp; Quality</h3>
+            <ul class="tags">
+              <li>Unit testing</li><li>Integration testing</li><li>Test automation</li><li>Code review</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Performance</h3>
+            <ul class="tags">
+              <li>Profiling</li><li>Benchmarking</li><li>Algorithms &amp; data structures</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Tools</h3>
+            <ul class="tags">
+              <li>Git &amp; GitHub</li><li>GitHub Actions</li><li>Linux</li><li>Docker</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Performance Benchmark Suite</h3>
+            <p>Repeatable benchmarks that track how code changes affect runtime and memory use.</p>
+            <a class="card-link" href="https://github.com/Belford95" target="_blank" rel="noopener">View project</a>
+          </article>
+          <article class="card">
+            <h3>Automated Test Harness</h3>
+            <p>A test setup with CI integration that runs unit and integration tests on every push.</p>
+            <a class="card-link" href="https://github.com/Belford95" target="_blank" rel="noopener">View project</a>
+          </article>
+          <article class="card">
+            <h3>Personal Portfolio</h3>
+            <p>This site: plain HTML, CSS and vanilla JS, deployed to GitHub Pages with GitHub Actions.</p>
+            <a class="card-link" href="https://github.com/Belford95/belford-site" target="_blank" rel="noopener">View project</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="repos" class="section section-alt">
+      <div class="container">
+        <h2>GitHub Repositories</h2>
+        <p class="section-intro">Recently updated public repositories, pulled live from GitHub.</p>
+        <div id="repo-list" class="card-grid" aria-live="polite">
+          <p class="status-message">Loading repositories…</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container narrow">
+        <h2>Contact</h2>
+        <p>I'm open to internship and graduate opportunities. The best way to reach me is by email.</p>
+        <ul class="contact-list">
+          <li><span class="contact-label">Email</span><a href="mailto:you@example.com">you@example.com</a></li>
+          <li><span class="contact-label">GitHub</span><a href="https://github.com/Belford95" target="_blank" rel="noopener">github.com/Belford95</a></li>
+          <li><span class="contact-label">LinkedIn</span><a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener">linkedin.com/in/your-profile</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year">2026</span> Your Name</p>
+    </div>
+  </footer>
+
+  <script src="repos.js"></script>
+</body>
+</html>
