@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Loaded first so the saved theme applies before the page paints. -->
+  <script src="theme.js"></script>
   <header class="site-header">
     <nav class="container nav" aria-label="Main">
       <a class="nav-brand" href="#hero">Belford Yap Hong Jie</a>
@@ -17,6 +19,7 @@
         <li><a href="#projects">Projects</a></li>
         <li><a href="#repos">Repos</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li><button type="button" id="theme-toggle" class="theme-toggle">Dark mode</button></li>
       </ul>
     </nav>
   </header>
