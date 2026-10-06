@@ -10,19 +10,20 @@
   --radius: 10px;
   --max-width: 1040px;
   --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color-scheme: light;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #11151b;
-    --bg-alt: #171c24;
-    --text: #e6e9ee;
-    --muted: #9aa4b2;
-    --border: #2a313c;
-    --accent: #7aa2ff;
-    --accent-hover: #a3bfff;
-    --tag-bg: #1e2a44;
-  }
+/* Dark theme: toggled by the nav button (theme.js), which also applies the system preference on first visit. */
+body.dark {
+  --bg: #11151b;
+  --bg-alt: #171c24;
+  --text: #e6e9ee;
+  --muted: #9aa4b2;
+  --border: #2a313c;
+  --accent: #7aa2ff;
+  --accent-hover: #a3bfff;
+  --tag-bg: #1e2a44;
+  color-scheme: dark;
 }
 
 *,
@@ -106,6 +107,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .nav-links {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 0.25rem 1.25rem;
   font-size: 0.95rem;
 }
@@ -169,9 +171,30 @@ ul { margin: 0; padding: 0; list-style: none; }
   color: #fff;
 }
 
-@media (prefers-color-scheme: dark) {
-  .button-primary,
-  .button-primary:hover { color: #0b1020; }
+body.dark .button-primary,
+body.dark .button-primary:hover { color: #0b1020; }
+
+/* Theme toggle */
+.theme-toggle {
+  padding: 0.3rem 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--text);
+  font: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.theme-toggle:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
 }
 
 /* Sections */
